@@ -1,0 +1,16 @@
+spring:
+  main:
+    web-environment: false
+
+snakes-and-ladders-conf:
+  snakes:
+    54: 31
+    43: 18
+    40: 3
+    27: 5
+  ladders:
+    50: 69
+    33: 49
+    13: 46
+    4: 25
+  max-simulation-count: 2
