@@ -25,7 +25,7 @@ public class SnakeAndLadderGame {
         this.statStore = statStore;
     }
 
-    public int rollDice() {
+    int rollDice() {
         int n = 0;
         Random r = new Random();
         n = r.nextInt(7);
@@ -48,7 +48,7 @@ public class SnakeAndLadderGame {
         return luckyWinRoll(landPosition, rollsAfter94) || luckySnakeMiss(landPosition);
     }
 
-    public int calculatePlayerPosition(int playerPosition, int diceValue, int rollsAfter94) {
+    int calculatePlayerPosition(int playerPosition, int diceValue, int rollsAfter94) {
         int playerNewPosition = playerPosition + diceValue;
 
         if (playerNewPosition > WIN_POINT){
@@ -71,11 +71,11 @@ public class SnakeAndLadderGame {
         return playerNewPosition;
     }
 
-    public boolean isWin(int playerPosition) {
+    boolean isWin(int playerPosition) {
         return WIN_POINT == playerPosition;
     }
 
-    public void startGame() {
+    void startGame() {
         int simulationCount = 0;
 
         do {
